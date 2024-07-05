@@ -3,7 +3,7 @@ import React from 'react';
 import {Image, SafeAreaView, StatusBar, StyleSheet, Text} from 'react-native';
 import Images from '../../constants/Images.constant';
 import Colors from '../../constants/Colors.constant';
-import ChatbotScreen from '../../src/modules/chat/ChatbotScreen';
+import ChatbotScreen from '../../src/modules/chat/screens/ChatbotScreen';
 
 const chatTabBar = {
   tabBarLabel: () => <Text style={styles.tabLabelStyle}>{'ChatBot'}</Text>,
@@ -46,14 +46,14 @@ export const styles = StyleSheet.create({
   },
   tabBarStyle: {
     backgroundColor: Colors.white,
-    height: 90,
+    height: 70,
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
     position: 'absolute',
   },
   tabBarItemStyle: {
-    paddingVertical: 21,
-    marginHorizontal: 4,
+    paddingVertical: 10,
+    marginHorizontal: 5,
   },
   tabLabelStyle: {
     fontSize: 14,
